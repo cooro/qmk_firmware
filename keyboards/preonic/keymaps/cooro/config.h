@@ -10,6 +10,11 @@
                                 }
 #endif
 
+#undef  ENCODERS_PAD_A
+#undef  ENCODERS_PAD_B
+#define ENCODERS_PAD_A { B13 }
+#define ENCODERS_PAD_B { B12 }
+
 #define MUSIC_MASK (keycode != KC_NO)
 
 /*
